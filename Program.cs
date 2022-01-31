@@ -177,16 +177,16 @@ namespace DIS_Assignmnet1_SPRING_2022
         {
             try
             {
-                Array.Sort(bull_bucks);
-               int sum = 0;
-               if (bull_bucks[0] != bull_bucks[1])
+                Array.Sort(bull_bucks);                     //Sorting the list and storing in array
+               int sum = 0;                                 //Initializing the sum as 0
+               if (bull_bucks[0] != bull_bucks[1])          //Checking the first two values of array are same or not
                {
                     sum = bull_bucks[0];
-                    for (int i = 0; i < bull_bucks.Length - 1; i++)
+                    for (int i = 0; i < bull_bucks.Length - 1; i++)             //Looping till one less than length of the array 
                     {
-                        if (bull_bucks[i] != bull_bucks[i + 1])
+                        if (bull_bucks[i] != bull_bucks[i + 1])                 //checking if two digits are not same then the loop will execute
                         {
-                            sum = sum + bull_bucks[i];
+                            sum = sum + bull_bucks[i];                          //Calcuating the sum of the digits which are not same
                         }
                     }
                }
